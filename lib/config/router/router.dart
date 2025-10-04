@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:parcial/config/router/app_router.dart';
-import 'package:parcial/presentation/screens/count/count.dart';
+// import 'package:parcial/presentation/screens/count/count.dart';
 import 'package:parcial/presentation/screens/screen.dart';
 
+class Routers {
   static final List<AppRouter> pages = [
     AppRouter(
       patch: "/",
@@ -11,49 +12,21 @@ import 'package:parcial/presentation/screens/screen.dart';
       icon: Icons.home,
       context: (context) => const HomeScreen(),
     ),
-    AppRouter(
-      patch: "button",
-      title: "Button",
-      description: "pantalla que contiene los botones",
-      icon: Icons.smart_button,
-      context: (context) => const ButtonScreen(),
-    ),
-    AppRouter(
-      patch: "card",
-      title: "Card",
-      description: "pantalla contiene la configuracion de las cards",
-      icon: Icons.card_travel,
-      context: (context) => const CardScreen(),
-    ),
-    AppRouter(
-      patch: "card",
-      title: "Card2",
-      description: "pantalla contiene la configuracion de las cards",
-      icon: Icons.card_travel,
-      context: (context) => const CardScreen(),
-    ),
+
     AppRouter(
       patch: "form",
       title: "Form",
       description: "formularios",
-      icon: Icons.forest,
+      icon: Icons.assignment_outlined,
       context: (context) => const FormScreen(),
     ),
 
     AppRouter(
-      patch: "count",
-      title: "Count",
-      description: "contador con riverpod",
-      icon: Icons.accessible_sharp,
-      context: (context) => const CountScreen(),
-    ),
-
-    AppRouter(
       patch: "peti",
-      title: "Peticion",
-      description: "Widget petiicion",
-      icon: Icons.accessible_sharp,
-      context: (context) => const PeticionScren(),
+      title: "Request",
+      description: "Widget request",
+      icon: Icons.help_outline ,
+      context: (context) => const RequestScreen(),
     ),
   ];
 
